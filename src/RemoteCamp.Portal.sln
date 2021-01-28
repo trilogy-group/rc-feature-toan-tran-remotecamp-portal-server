@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoteCamp.Portal.Web", "RemoteCamp.Portal.Web\RemoteCamp.Portal.Web.csproj", "{79224709-42EC-4FE7-BADE-66BF46B53390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteCamp.Portal.Core", "RemoteCamp.Portal.Core\RemoteCamp.Portal.Core.csproj", "{8E88B472-1723-4D0A-B729-C2C24A1E75CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{86631744-4F86-41B1-AEF3-58A5147BBA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteCamp.Portal.Core.Test", "Tests\RemoteCamp.Portal.Core.Test\RemoteCamp.Portal.Core.Test.csproj", "{7C047F6D-DE80-4CE7-8547-5C3F596BD0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteCamp.Portal.Database.MigrationTool", "RemoteCamp.Portal.Database.MigrationTool\RemoteCamp.Portal.Database.MigrationTool.csproj", "{CB2CA1A2-FD11-4403-B238-86A6586203A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79224709-42EC-4FE7-BADE-66BF46B53390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79224709-42EC-4FE7-BADE-66BF46B53390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79224709-42EC-4FE7-BADE-66BF46B53390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79224709-42EC-4FE7-BADE-66BF46B53390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E88B472-1723-4D0A-B729-C2C24A1E75CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E88B472-1723-4D0A-B729-C2C24A1E75CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E88B472-1723-4D0A-B729-C2C24A1E75CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E88B472-1723-4D0A-B729-C2C24A1E75CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C047F6D-DE80-4CE7-8547-5C3F596BD0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C047F6D-DE80-4CE7-8547-5C3F596BD0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C047F6D-DE80-4CE7-8547-5C3F596BD0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C047F6D-DE80-4CE7-8547-5C3F596BD0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2CA1A2-FD11-4403-B238-86A6586203A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2CA1A2-FD11-4403-B238-86A6586203A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2CA1A2-FD11-4403-B238-86A6586203A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2CA1A2-FD11-4403-B238-86A6586203A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C047F6D-DE80-4CE7-8547-5C3F596BD0FF} = {86631744-4F86-41B1-AEF3-58A5147BBA75}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAD1F67B-3B84-4A3C-8259-19FF52C808D6}
+	EndGlobalSection
+EndGlobal
