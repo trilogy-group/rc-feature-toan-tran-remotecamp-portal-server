@@ -17,9 +17,8 @@ namespace RemoteCamp.Portal.Web.Test.Controllers
         [InlineData("Basic token", typeof(BadRequestObjectResult))]
         [InlineData("", typeof(BadRequestObjectResult))]
         [InlineData(null, typeof(BadRequestObjectResult))]
-        public void Post(string authorizationHeader, Type resultType)
+        public void Post_DifferentData_ReturnCorrectResult(string authorizationHeader, Type resultType)
         {
-
             // Arrange
             var httpContext = new DefaultHttpContext();
             var controllerContext = new ControllerContext()
@@ -40,8 +39,11 @@ namespace RemoteCamp.Portal.Web.Test.Controllers
 
             // Assert
             result.Result.ShouldBeOfType(resultType);
-            if (resultType == typeof(CreatedResult)) {
-                (result.Result as CreatedResult).Value.ShouldBe(newToken);
+            if (resultType == typeof(CreatedResult))
+            {
+                var createdResult = result.Result as CreatedResult;
+                createdResult.ShouldNotBeNull();
+                createdResult.Value.ShouldBe(newToken);
             }
         }
     }

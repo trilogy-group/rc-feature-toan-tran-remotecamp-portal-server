@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RemoteCamp.Portal.Web.Core.Security;
-using System.Security.Claims;
 
 namespace RemoteCamp.Portal.Web.Controllers
 {
@@ -30,7 +30,7 @@ namespace RemoteCamp.Portal.Web.Controllers
                 return BadRequest("Not using token authentication");
             }
 
-            string token = authorizationHeader.Substring(AuthorizationHeaderTokenPrefix.Length);
+            var token = authorizationHeader.Substring(AuthorizationHeaderTokenPrefix.Length);
             return Created(Request.Path, _jwtTokenFactory.Renew(token));
         }
     }
